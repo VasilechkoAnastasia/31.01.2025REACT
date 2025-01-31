@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import { Test1, MyComponents, Test2, MyApp } from './Components/Task1';
+import { Profile ,Main} from './Components/Task2';
+import { Ifrender } from './Components/Task3';
+import{ShoppingList} from './Components/Task4'
+import { Card} from './Components/Task5';
 
-function App() {
+function App()
+ {
+  const user = {
+    name: 'Bill Gates',
+    imageUrl: 'bg.png',
+    imageW: 260,
+    imageH: 200,
+  };
+  const user2 = {
+    name: 'Bill Gates',
+    imageUrl: 'logo192.png',
+    imageW: 260,
+    imageH: 200,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+     {/* <Test1></Test1>
+     <MyComponents></MyComponents>  */}
+
+     {/* <MyApp> </MyApp>  */}
+     {/* <Profile im = 'bg.png' text="Hello Bill"></Profile>      */}
+    <Profile></Profile>
+     {/* <Ifrender></Ifrender> */}
+     {/* <ShoppingList></ShoppingList> */}
+     {/* <Card user = {user}></Card>
+     <Card user = {user2}></Card>
+     <Card user = {user}></Card> */}
+  
+
     </div>
   );
 }
 
 export default App;
+
+
